@@ -23,7 +23,7 @@ export default function Perfil (){
 
                 
                 </address>
-                <ul className={styles.listaIneteresses}> 
+                <ul className={styles.listaInteresses}> 
                    <li>Educação </li>
                    <li>Meio Ambiente</li>
                    <li>Assistencia Social</li>

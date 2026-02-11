@@ -19,7 +19,7 @@ export default function Footer(){
 
             </div>
             <p>© 2026 Vai na Web & Empower. Todos os direitos reservados. Projeto destinado exclusivamente a fins educativos.</p>
-            <nav>
+            <nav className={styles.navFooter}>
                 <img src={Whatsapp} alt="logo do whatsapp" />
                 <img src={Instagram} alt="logo do instagram" />
                 <img src={Linkedin} alt="logo do linkedin" />
