@@ -7,22 +7,42 @@ footer{
     color: #FFFFFF;
 
 div{
-    border: solid red;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 15%;
 }
 p{
-    border: solid white;
+    
     width: 23%;
     font-weight: 400;
     text-align: center;
 }
 nav{
-    border: solid red;
+    
     width: 15%;
     display: flex;
     justify-content: space-around;
 }
+}
+//Responsivo do footer
+@media (min-width: 201px) and (max-width: 500px) {
+  footer {
+    flex-direction: column-reverse;
+    height: 35vh;
+    div {
+      width: 60%;
+      h2 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    p {
+      width: 90%;
+    }
+    nav {
+      width: 80%;
+    }
+  }
 }
