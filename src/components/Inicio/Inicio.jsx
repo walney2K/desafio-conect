@@ -1,19 +1,20 @@
-import react from "react"
+import styles from "./Inicio.module.scss";
+import ImgInicial from "../../assets/img-tela-inicial.png"
 
+export default function Inicio() {
+  return (
+    <section className={styles.containerTelaInicial}>
+      <div>
+        <h1> Projetos Sociais que transformam </h1>
+         <p>
+          Conectamos sua empresa com projetos sociais impactantes. Juntos,
+          criamos mudanças reais na comunidade.
+         </p>
+      </div>
 
-
-export default function Inicio (){
-    return(
-        <>
-        <h2>Inicio</h2>
-
-
-
-
-
-        </>
-    )
-
-
-
+      <img src={ImgInicial} alt="Imagem da tela inicial" />
+    </section>
+  );
 }
+
+

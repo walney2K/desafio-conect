@@ -4,7 +4,7 @@ import Inicio from "../Inicio/Inicio";
 import Acoes from "../AcoesDaConect/AcoesDaConect";
 import QuemSomos from "../QuemSomos/QuemSomos";
 import Perfil from "../Perfil/Perfil";
-import styles from "./NavBar.module.scss";
+
 
 
 
@@ -12,60 +12,43 @@ import styles from "./NavBar.module.scss";
 import Logo from "../../assets/logo.png";
 import fotoDePerfil from "../../assets/Ronaldo.jpg";
 
+
+import styles from "./NavBar.module.scss";
+
 export default function NavBar (){
     return(
-        <BrowserRouter>
-        
-        <nav ClassName={styles.navBar}>
-            <Link to="/" >
-            <img src={Logo} alt="logo" />
-            </Link>
+         <BrowserRouter>
+      <nav className={styles.navBar}>
+        <Link to="/">
+          <img className={styles.logo} src={Logo} alt="Logo" />
+        </Link>
 
-            <ul>
-                <li>
+        <ul>
+          <li>
+            <Link to="/"> Início </Link>
+          </li>
+          <li>
+            <Link to="/acoes"> Ações da Connect</Link>
+          </li>
+          <li>
+            <Link to="/quemSomos"> Quem Somos </Link>
+          </li>
+        </ul>
 
-                    <Link to="/" >Inicio </Link>
+        <Link to="/perfil">
+          <img className={styles.imgPerfil} src={fotoDePerfil} alt="Foto do perfil" />
+        </Link>
+      </nav>
 
-                    </li>
+      <Routes>
 
-                <li>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/acoes" element={<Acoes />} />
+        <Route path="/quemSomos" element={<QuemSomos />} />
+        <Route path="/perfil" element={<Perfil />} />
+      </Routes>
 
-                    <Link to="/acoes" >AcoesDaConect </Link>
-
-                    </li>
-
-                <li>
-
-                    <Link to="/quemSomos" >QuemSomos </Link>
-
-                    </li>
-                
-                
-            </ul>
-            <Link to="/perfil" >
-
-            <img VlassName={styles.imgPerfil} src= {fotoDePerfil} alt="foto de perfil" />
-
-            </Link>
-
-
-        </nav>
-
-        <Routes>
-
-            <Route patch="/" element = {<Inicio/>} />
-            <Route patch="/acoes" element = {<Acoes/>} />
-            <Route patch="/quemSomos" element = {<QuemSomos/>} />
-            <Route patch="/perfil" element = {<Perfil/>} />
-
-        </Routes>
-
-
-
-        
-
-
-        </BrowserRouter>
+    </BrowserRouter>
     )
 
 

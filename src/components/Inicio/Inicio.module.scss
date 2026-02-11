@@ -1,0 +1,29 @@
+.containerTelaInicial{
+    background-color: white;
+    display: flex;
+     justify-content: center;
+
+
+
+    div{
+        border: white;
+        width: 45%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h1{
+            font-size: 5.625rem;
+            width: 85%;
+            border: solid white;
+        }
+        p{
+            font-size: 1.8rem;
+            width: 75%;
+
+        }
+    }
+    img{
+        border: solid white;
+    }
+}

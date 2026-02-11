@@ -1,0 +1,28 @@
+footer{
+    background-color: #205691;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    color: #FFFFFF;
+
+div{
+    border: solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+p{
+    border: solid white;
+    width: 23%;
+    font-weight: 400;
+    text-align: center;
+}
+nav{
+    border: solid red;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+}
