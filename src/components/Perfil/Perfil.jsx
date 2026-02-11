@@ -1,5 +1,5 @@
 import react from "react"
-import styles from "./perfil.module.scss"
+import styles from "./Perfil.module.scss"
 import imgPerfil from "../../assets/ronaldo.jpg"
 
 
