@@ -1,11 +1,11 @@
 import react from "react"
 import styles from "./Perfil.module.scss"
-import imgPerfil from "../../assets/ronaldo.jpg"
+import imgPerfil from "../../assets/Ronaldo.jpg"
 
 
 export default function Perfil (){
     return(
-        <section className={styles.containerTelaPerfil}>
+        <section className={styles.containerTelaPerfil}>S
 
 
          <article>
