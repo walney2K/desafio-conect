@@ -5,7 +5,7 @@ import imgPerfil from "../../assets/Ronaldo.jpg"
 
 export default function Perfil (){
     return(
-        <section className={styles.containerTelaPerfil}>S
+        <section className={styles.containerTelaPerfil}>
 
 
          <article>
